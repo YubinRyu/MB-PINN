@@ -82,10 +82,10 @@ for epoch in range(start_epoch, last_epoch+1):
                 print('Best Validation Loss: ', best_val_loss)
                 print('Saving Best Model...')
 
-                CHECKPOINT_PATH = dir + '/result/best_model1.pth'
+                CHECKPOINT_PATH = dir + '/best_model1.pth'
                 torch.save(model1.state_dict(), CHECKPOINT_PATH)
 
-                CHECKPOINT_PATH = dir + '/result/best_model2.pth'
+                CHECKPOINT_PATH = dir + '/best_model2.pth'
                 torch.save(model2.state_dict(), CHECKPOINT_PATH)
 
                 print('Trigger Times : 0')
@@ -100,7 +100,7 @@ for epoch in range(start_epoch, last_epoch+1):
                             'w_loss_history': w_loss_list, 'pde_loss_history': pde_loss_list,
                             'ic_loss_history': ic_loss_list, 'bc_loss_history': bc_loss_list,
                             'mb_loss_history': mb_loss_list},
-                            dir + '/result/checkpoint.pt')
+                            dir + '/checkpoint.pt')
 
             else:
                 trigger_times += 1
