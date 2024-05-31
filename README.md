@@ -21,7 +21,7 @@ Run the following command to train PINN.
     python model/PINN/main.py
     
 ### 3) NN
-NN is a baseline model that relies solely on network $w_thetha$ without physical constraints. 
+NN is a baseline model that relies solely on network $w_θ$ without physical constraints. 
 Run the following command to train NN.
 
     python model/NN/main.py
