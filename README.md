@@ -10,6 +10,17 @@ Run the following command to set up.
 The additional data that support the findings in this study is available upon reasonable request to the corresponding authors. 
 
 ## Model
-Run the following command to train PINN-Ex. 
+### 1) MB-PINN
+Run the following command to train MB-PINN. 
 
-    python model/PINN/main_ddp.py
+    python model/MB-PINN/main.py
+
+### 2) PINN
+Run the following command to train PINN.
+
+    python model/PINN/main.py
+    
+### 3) NN
+Run the following command to train NN.
+
+    python model/NN/main.py
