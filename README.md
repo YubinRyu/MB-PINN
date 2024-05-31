@@ -16,7 +16,7 @@ Run the following command to train MB-PINN.
     python model/MB-PINN/main.py
 
 ### 2) PINN
-Run the following command to train PINN.
+PINN solely utilizes network $w_θ$ with physical constraints, excluding the moving boundary constraint. Run the following command to train PINN.
 
     python model/PINN/main.py
     
